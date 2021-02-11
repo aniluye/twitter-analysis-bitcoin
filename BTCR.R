@@ -12,10 +12,10 @@ options(RCurlOptions = list(cainfo = system.file("CurlSSL","cacert.pem",package 
 
 #API girisi
 
-api_key <- "pO3RjRYhKyGScTCSN3yLSdGhR"
-api_secret <-"QBBy5n7D57LuCTQrFX2CSIticDW8YvsyaC8wxARpg4VpHSPSmv"
-access_token <-"1060549114973306881-w8ZxiAgx14GR353tDMYebKWFBuyJ3S"
-access_token_secret <-"CdD38ORzXiDqPsKCPXzH5KeztrtEY5v2Du8HUc2epAht5"
+api_key <- "pO3*****yGScTC*****GhR"
+api_secret <-"QBB******uCTQrFX2C*******syaC8wxA********Smv"
+access_token <-"10***********w8Zx*********tDMYebK*****3S"
+access_token_secret <-"CdD******CPXzH5Keztrt********Uc2epAht5"
 
 setup_twitter_oauth(api_key,api_secret,access_token,access_token_secret)
 
@@ -98,11 +98,4 @@ btcdfSn<- ggplot(data=sentimentscores,aes(x=sentiment,y=Score))+
 
 
 
-
-#WORDCLOUD
-install.packages("wordcloud")
-
-library(wordcloud)
-
-wordcloud(words = btcdf2$word, min.freq = 200)
 
