@@ -42,7 +42,7 @@ btcdf$text = gsub("^\\s+|\\s+$", "", btcdf$text)
 
 btcdf$text <- iconv(btcdf$text, "UTF-8", "ASCII", sub="")
 
-##SHOW THE MOST FREQUENT WORDS FOUND IN THE TWEETS
+##MOST FREQUENT WORDS
 
 library(tidyverse)
 library(syuzhet)
@@ -72,7 +72,7 @@ btcdfTn <- btcdf2 %>%
 
 
 
-## PERFORM A SENTIMENT ANALYSIS OF THE TWEETS
+## SENTIMENT ANALYSIS 
 
 btcdf3 <- btcdf
 
